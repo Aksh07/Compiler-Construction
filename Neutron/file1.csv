@@ -1,0 +1,85 @@
+,Stack,Input,Rule
+0,['Functions'],"['int', 'Name', '(', 'int', 'Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+1,"['Functions', 'Function']","['int', 'Name', '(', 'int', 'Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",Functions -> Function Functions
+2,"['Functions', '}', 'content', '{', ')', 'parameter', '(', 'FunctionName', 'FunctionType']","['int', 'Name', '(', 'int', 'Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",Function -> FunctionType FunctionName ( parameter ) { content }
+3,"['Functions', '}', 'content', '{', ')', 'parameter', '(', 'FunctionName', 'type-specifier']","['int', 'Name', '(', 'int', 'Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",FunctionType -> type-specifier
+4,"['Functions', '}', 'content', '{', ')', 'parameter', '(', 'FunctionName', 'void']","['int', 'Name', '(', 'int', 'Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",type-specifier -> void
+5,"['Functions', '}', 'content', '{', ')', 'parameter', '(', 'FunctionName']","['Name', '(', 'int', 'Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+6,"['Functions', '}', 'content', '{', ')', 'parameter', '(', 'Name']","['Name', '(', 'int', 'Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",FunctionName -> Name
+7,"['Functions', '}', 'content', '{', ')', 'parameter', '(']","['(', 'int', 'Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+8,"['Functions', '}', 'content', '{', ')', 'parameter']","['int', 'Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+9,"['Functions', '}', 'content', '{', ')', 'Name', 'dataType']","['int', 'Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",parameter -> dataType Name
+10,"['Functions', '}', 'content', '{', ')', 'Name', 'type-specifier']","['int', 'Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",dataType -> type-specifier
+11,"['Functions', '}', 'content', '{', ')', 'Name', 'void']","['int', 'Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",type-specifier -> void
+12,"['Functions', '}', 'content', '{', ')', 'Name']","['Name', ')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+13,"['Functions', '}', 'content', '{', ')']","[')', '{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+14,"['Functions', '}', 'content', '{']","['{', 'Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+15,"['Functions', '}', 'content']","['Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+16,"['Functions', '}', 'content', ';', 'Akshat']","['Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",content -> Akshat ; content
+17,"['Functions', '}', 'content', ';', 'Aryan', 'Name']","['Name', 'Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",Akshat -> Name Aryan
+18,"['Functions', '}', 'content', ';', 'Aryan']","['Name', ';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+19,"['Functions', '}', 'content', ';', 'Aryan']","[';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']","Error, parsing Name"
+20,"['Functions', '}', 'content', ';']","[';', '}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']","Error, popping Aryan"
+21,"['Functions', '}', 'content']","['}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+22,"['Functions', '}']","['}', 'int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",content -> ''
+23,['Functions'],"['int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+24,"['Functions', 'Function']","['int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",Functions -> Function Functions
+25,"['Functions', '}', 'content', '{', ')', 'parameter', '(', 'FunctionName', 'FunctionType']","['int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",Function -> FunctionType FunctionName ( parameter ) { content }
+26,"['Functions', '}', 'content', '{', ')', 'parameter', '(', 'FunctionName', 'type-specifier']","['int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",FunctionType -> type-specifier
+27,"['Functions', '}', 'content', '{', ')', 'parameter', '(', 'FunctionName', 'void']","['int', 'Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",type-specifier -> void
+28,"['Functions', '}', 'content', '{', ')', 'parameter', '(', 'FunctionName']","['Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+29,"['Functions', '}', 'content', '{', ')', 'parameter', '(', 'Name']","['Name', '(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",FunctionName -> Name
+30,"['Functions', '}', 'content', '{', ')', 'parameter', '(']","['(', 'string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+31,"['Functions', '}', 'content', '{', ')', 'parameter']","['string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+32,"['Functions', '}', 'content', '{', ')', 'Name', 'dataType']","['string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",parameter -> dataType Name
+33,"['Functions', '}', 'content', '{', ')', 'Name', 'type-specifier']","['string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",dataType -> type-specifier
+34,"['Functions', '}', 'content', '{', ')', 'Name', 'void']","['string', 'Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",type-specifier -> void
+35,"['Functions', '}', 'content', '{', ')', 'Name']","['Name', ')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+36,"['Functions', '}', 'content', '{', ')']","[')', '{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+37,"['Functions', '}', 'content', '{']","['{', 'int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+38,"['Functions', '}', 'content']","['int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+39,"['Functions', '}', 'content', ';', 'variableInitialization']","['int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",content -> variableInitialization ; content
+40,"['Functions', '}', 'content', ';', 'moreVariable', 'Name', 'type-specifier']","['int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",variableInitialization -> type-specifier Name moreVariable
+41,"['Functions', '}', 'content', ';', 'moreVariable', 'Name', 'void']","['int', 'Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",type-specifier -> void
+42,"['Functions', '}', 'content', ';', 'moreVariable', 'Name']","['Name', '=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+43,"['Functions', '}', 'content', ';', 'moreVariable']","['=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+44,"['Functions', '}', 'content', ';', 'valueVariable', '=']","['=', 'IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",moreVariable -> = valueVariable
+45,"['Functions', '}', 'content', ';', 'valueVariable']","['IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+46,"['Functions', '}', 'content', ';', 'CharacterValue']","['IntegerValue', ';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",valueVariable -> CharacterValue
+47,"['Functions', '}', 'content', ';']","[';', 'Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+48,"['Functions', '}', 'content']","['Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+49,"['Functions', '}', 'content', ';', 'Akshat']","['Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",content -> Akshat ; content
+50,"['Functions', '}', 'content', ';', 'Aryan', 'Name']","['Name', '(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",Akshat -> Name Aryan
+51,"['Functions', '}', 'content', ';', 'Aryan']","['(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+52,"['Functions', '}', 'content', ';', 'functionCall']","['(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",Aryan -> functionCall
+53,"['Functions', '}', 'content', ';', ')', 'arguments', '(']","['(', 'IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",functionCall -> ( arguments )
+54,"['Functions', '}', 'content', ';', ')', 'arguments']","['IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+55,"['Functions', '}', 'content', ';', ')', 'names']","['IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",arguments -> names
+56,"['Functions', '}', 'content', ';', ')', 'names', 'NameOrValueOrOperations']","['IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",names -> NameOrValueOrOperations names
+57,"['Functions', '}', 'content', ';', ')', 'names', 'Decide', 'NameOrValue']","['IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",NameOrValueOrOperations -> NameOrValue Decide
+58,"['Functions', '}', 'content', ';', ')', 'names', 'Decide', 'valueVariable']","['IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",NameOrValue -> valueVariable
+59,"['Functions', '}', 'content', ';', ')', 'names', 'Decide', 'CharacterValue']","['IntegerValue', ')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",valueVariable -> CharacterValue
+60,"['Functions', '}', 'content', ';', ')', 'names', 'Decide']","[')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+61,"['Functions', '}', 'content', ';', ')', 'names']","[')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",Decide -> ''
+62,"['Functions', '}', 'content', ';', ')']","[')', ';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",names -> ''
+63,"['Functions', '}', 'content', ';']","[';', 'Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+64,"['Functions', '}', 'content']","['Name', '(', 'Name', ')', ';', '}', ';', 'end']",
+65,"['Functions', '}', 'content', ';', 'Akshat']","['Name', '(', 'Name', ')', ';', '}', ';', 'end']",content -> Akshat ; content
+66,"['Functions', '}', 'content', ';', 'Aryan', 'Name']","['Name', '(', 'Name', ')', ';', '}', ';', 'end']",Akshat -> Name Aryan
+67,"['Functions', '}', 'content', ';', 'Aryan']","['(', 'Name', ')', ';', '}', ';', 'end']",
+68,"['Functions', '}', 'content', ';', 'functionCall']","['(', 'Name', ')', ';', '}', ';', 'end']",Aryan -> functionCall
+69,"['Functions', '}', 'content', ';', ')', 'arguments', '(']","['(', 'Name', ')', ';', '}', ';', 'end']",functionCall -> ( arguments )
+70,"['Functions', '}', 'content', ';', ')', 'arguments']","['Name', ')', ';', '}', ';', 'end']",
+71,"['Functions', '}', 'content', ';', ')', 'names']","['Name', ')', ';', '}', ';', 'end']",arguments -> names
+72,"['Functions', '}', 'content', ';', ')', 'names', 'NameOrValueOrOperations']","['Name', ')', ';', '}', ';', 'end']",	names -> NameOrValueOrOperations names
+73,"['Functions', '}', 'content', ';', ')', 'names', 'Decide', 'NameOrValue']","['Name', ')', ';', '}', ';', 'end']",NameOrValueOrOperations -> NameOrValue Decide
+74,"['Functions', '}', 'content', ';', ')', 'names', 'Decide', 'Name']","['Name', ')', ';', '}', ';', 'end']",NameOrValue -> Name
+75,"['Functions', '}', 'content', ';', ')', 'names', 'Decide']","[')', ';', '}', ';', 'end']",
+76,"['Functions', '}', 'content', ';', ')', 'names']","[')', ';', '}', ';', 'end']",Decide -> ''
+77,"['Functions', '}', 'content', ';', ')']","[')', ';', '}', ';', 'end']",names -> ''
+78,"['Functions', '}', 'content', ';']","[';', '}', ';', 'end']",
+79,"['Functions', '}', 'content']","['}', ';', 'end']",
+80,"['Functions', '}']","['}', ';', 'end']",content -> ''
+81,['Functions'],"[';', 'end']",
+82,[';'],"[';', 'end']",Functions -> ;
+83,[],['end'],

@@ -1,0 +1,95 @@
+#Aryan Sharma 						    2018A7PS0245H
+#Akshat Bajpai 						    2018A7PS0498H
+#Sai Chaitanya Nallamala 			2018A7PS0503H
+#Sruthi Reddy Ailuri				  2018A7PS0160H
+
+
+Functions -> Function Functions
+Functions -> ;
+
+Function -> FunctionType FunctionName ( parameters ) { content }
+
+FunctionName -> Name
+FunctionType -> type-specifier
+
+type-specifier -> void
+type-specifier -> char
+type-specifier -> short
+type-specifier -> int
+type-specifier -> long
+type-specifier -> float
+type-specifier -> double
+type-specifier -> string
+
+parameters -> parameter D
+parameters -> ''
+D -> , parameters
+D -> ''
+
+parameter -> dataType Name
+
+dataType -> type-specifier
+
+content -> conditionalStatement content
+content -> variableInitialization ; content
+content -> loop content
+content -> Akshat ; content
+content -> returnStatement ; content
+content -> ''
+
+returnStatement -> return temp
+temp -> valueVariable
+temp -> Name functionCall
+
+Akshat -> Name Aryan
+Aryan -> functionCall
+Aryan -> operation
+
+conditionalStatement -> if ( condition ) { content } Extra
+Extra -> else { content }
+Extra -> ''
+
+condition -> NameOrValue doubleOperator NameOrValue
+
+NameOrValue -> Name
+NameOrValue -> valueVariable
+
+doubleOperator -> ==
+doubleOperator -> <=
+doubleOperator -> >=
+doubleOperator -> !=
+doubleOperator -> >
+doubleOperator -> <
+
+variableInitialization -> type-specifier Name moreVariable
+moreVariable -> = valueVariable
+valueVariable -> CharacterValue
+valueVariable -> StringValue
+valueVariable -> FloatValue
+valueVariable -> IntegerValue
+moreVariable -> ''
+
+functionCall -> ( arguments )
+
+arguments -> names
+
+names -> NameOrValueOrOperations names
+names -> , NameOrValueOrOperations
+names -> ''
+NameOrValueOrOperations -> NameOrValue Decide
+Decide -> operationRHS
+Decide -> ''
+
+loop -> while ( condition ) { content }
+
+operationRHS -> operators NameOrValue
+operation -> = NameOrValue operationRHS
+
+operators -> +
+operators -> -
+operators -> /
+operators -> *
+operators -> &
+operators -> |
+operators -> ^
+operators -> %

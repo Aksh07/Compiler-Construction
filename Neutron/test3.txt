@@ -1,0 +1,10 @@
+int main ( string arg )
+{
+int m = 1 ;
+while ( m <= 10 )
+{
+write ( m ) ;
+m = m + 1 ;
+}
+}
+;

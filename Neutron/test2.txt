@@ -1,0 +1,13 @@
+int main ( string arg )
+{
+int x = 1 ;
+if ( x == 1 )
+{
+write ( 0 ) ;
+}
+else
+{
+write ( 1 ) ;
+}
+}
+;

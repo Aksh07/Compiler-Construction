@@ -1,0 +1,23 @@
+/*Compiler Construction
+Phase 1
+*/
+int fact ( int n ) {
+if ( n <= 1 )
+{
+return 1 ;
+}
+else
+{
+return n ;
+}
+}
+int main ( string arg ) {
+int x ;
+//x = 1 ;
+while ( x <= 10 ) {
+write ( x ) ;
+x = x + 1 ;
+//Test case ends
+}
+}
+;
